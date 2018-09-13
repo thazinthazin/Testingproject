@@ -18,3 +18,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profile', 'Auth\ProfileController@show')->name('profile');
+Route::get('/edit-profile', 'Auth\ProfileController@edit')->name('edit-profile');
+Route::post('/edit-profile', 'Auth\ProfileController@update');
