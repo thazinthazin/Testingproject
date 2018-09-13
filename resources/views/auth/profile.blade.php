@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="panel-body profile-container">
-                    <div class="col-md-6 img">
+                    <div class="col-md-3 col-md-offset-1 img">
                       <img src="{{$user['photo']}}"  alt="" class="img-rounded">
                     </div>
                     <div class="col-md-6 details">
