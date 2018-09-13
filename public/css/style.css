@@ -1,0 +1,149 @@
+body{
+    font-family: Arial, Helvatica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Global */
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header{
+    position: fixed;
+    min-height: 70px;
+    overflow: hidden;
+    width: 100%;
+    background-color:transparent;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 15px 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header nav{
+    float: right;
+    margin-top: 15px;
+}
+
+header a:hover{
+    color: #2f7ea6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header.active .navbar-nav>li>a {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-shadow: none;
+    color: #121212!important;
+}
+
+header.active {
+    background-color: rgb(17, 17, 17);
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    opacity: 0.9;
+}
+
+/* Showcase */
+#showcase{
+    min-height: 600px;
+    background: url('../img/bg-2.jpg') no-repeat;
+    text-align: center;
+    color: #000;
+}
+
+#showcase h1{
+    margin-top: 180px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/* Boxes */
+#boxes{
+    margin: -50px 37px 0 37px;
+    background: #29e1cd;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    margin: 40px 15px 15px 20px;
+    background: #fff;
+}
+
+#boxes .box img{
+    width: 80%;
+}
+
+/* Newsletter */
+#newsletter{
+    padding: 15px;
+    color: #a7a5a5;
+    background: #000;
+}
+
+footer{
+    padding: 5px 0 5px 60px;
+    color: #a7a5a5;
+    background-color: #1c1c1c;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #boxes .box {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 100px;
+    }
+}
