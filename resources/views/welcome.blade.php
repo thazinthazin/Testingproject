@@ -9,8 +9,9 @@
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" crossorigin="anonymous">
     </head>
     <body>
         <header>
@@ -20,7 +21,7 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="{{url('/')}}">Home</a></li>
                         <li><a href="{{url('login')}}">Login</a></li>
                         <li><a href="{{url('register')}}">Register</a></li>
                     </ul>
@@ -29,9 +30,31 @@
         </header>
 
         <section id="showcase">
-            <div class="container">
-                <h1>Afforatble Professional web design</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias amet aperiam beatae consectetur dolorem eos eum excepturi iusto libero molestias praesentium, ratione similique sit tempora velit, veritatis vero voluptatum.</p>
+            <div id="MiddleCarousel" class="carousel slide UACarousel" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <!-- <li data-target="#MiddleCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#MiddleCarousel" data-slide-to="1"></li>
+                <li data-target="#MiddleCarousel" data-slide-to="2"></li> -->
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="./img/slide1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./img/slide2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./img/slide3.jpg" alt="Second slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#MiddleCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#MiddleCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
         </section>
 
@@ -76,14 +99,14 @@
                 <h6><strong>Email:</strong> aungkowin@futurehubmyanmar.com</h6>
 
                 <div id="social_box">
-                    <a href="#"><img src="img/f1.png" alt="facebook" /></a>
-                    <a href="#"><img src="img/f3.png" alt="twitter" /></a>
-                    <a href="#"><img src="img/f2.png" alt="feed" /></a>
-                    <a href="#"><img src="img/f4.png" alt="youtube" /></a>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </div>
 
                 <div class="container">
-                    <br><br><br><br><br>
+                    <br><br><br><br><br><br>
                 </div>
             </div>
         </section>
@@ -93,24 +116,19 @@
             <h6><strong>Get the mobile app</strong></h6>
         </footer>
 
-        <script src="./js/jquery-1.11.2.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
         <script type="text/javascript">
             jQuery(document).ready(function($) {
 
     'use strict';
-
-
-
-        // var top_header = $('.parallax-content');
-        // top_header.css({'background-position':'center center'}); // better use CSS
-
-        // $(window).scroll(function () {
-        // var st = $(this).scrollTop();
-        // top_header.css({'background-position':'center calc(50% + '+(st*.5)+'px)'});
-        // });
-
-
 
         $(window).on("scroll", function() {
             if($(window).scrollTop() > 100) {
@@ -121,9 +139,7 @@
             }
         });
 
-
-
-});
+    });
 
         </script>
     </body>
