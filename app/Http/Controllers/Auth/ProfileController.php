@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use App\User;
 use Hash;
+use Session;
 
 class ProfileController extends Controller
 {
@@ -67,6 +68,7 @@ class ProfileController extends Controller
 
         $user_id = Auth::id();
     	$user = User::find($user_id);
+        Session::put('UserName', $user->name);
         $user->update($input);
 
         return view('auth.profile', compact('user'));
